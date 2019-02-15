@@ -1,1 +1,2 @@
-# jashanj0tsingh.github.io
+# jashanjotsingh.com
+Powered by Jekyll
