@@ -16,7 +16,6 @@ theme:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jemoji
 
 # Global Variables
 user:
