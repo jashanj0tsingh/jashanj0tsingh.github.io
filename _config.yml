@@ -1,0 +1,40 @@
+title: Jashanjot Singh
+email: s_jashan@encs.concordia.ca
+description: >- 
+  The woods are lovely, dark and deep,
+  But I have promises to keep,   
+  And miles to go before I sleep,   
+  And miles to go before I sleep. ~ Robert Frost
+baseurl: "" 
+url: "jashanj0tsingh.github.io" 
+twitter_username: _jashanjotsingh
+github_username:  jashanj0tsingh
+
+# Build settings
+markdown: kramdown
+theme:
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Global Variables
+user:
+  name: Jashanjot Singh
+  status:
+  description: MSc. Computer Science
+
+# pages
+page_names:
+  - home
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
