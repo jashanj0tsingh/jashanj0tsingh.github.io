@@ -1,13 +1,17 @@
 body {
     padding: 50px;
-    font: 14px "Lucida Console", Monaco, monospace;
+    font: 16px "Lucida Console", Menlo, monospace;
   }
   
   a {
-    color: #00B7FF;
+    color: #FFC300;
   }
   
   img {
-    width: 70%;
-    height: 70%;
+    width: normal;
+    height: normal;
+  }
+
+  code {
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   }

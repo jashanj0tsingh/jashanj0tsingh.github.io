@@ -16,6 +16,7 @@ theme:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jemoji
 
 # Global Variables
 user:
@@ -26,6 +27,7 @@ user:
 # pages
 page_names:
   - home
+  - about
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
