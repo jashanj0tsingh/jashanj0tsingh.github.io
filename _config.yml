@@ -7,10 +7,11 @@ baseurl: ""
 url: "jashanj0tsingh.github.io" 
 twitter_username: _jashanjotsingh
 github_username:  jashanj0tsingh
+linkedin_username: jashanj0tsingh
 
 # Build settings
 markdown: kramdown
-theme:
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -25,6 +26,7 @@ user:
 page_names:
   - home
   - about
+  - publications
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
