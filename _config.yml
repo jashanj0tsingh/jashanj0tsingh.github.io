@@ -11,7 +11,7 @@ linkedin_username: jashanj0tsingh
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
