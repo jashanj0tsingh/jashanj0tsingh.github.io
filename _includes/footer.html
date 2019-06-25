@@ -1,5 +1,33 @@
-<footer class="mastfoot mt-auto">
-    <div class="inner">
-      <p> © <a href="/">{{ site.user.name }}</a>, 2019</p>
+<!-- Footer -->
+<footer class="page-footer font-small cyan darken-3">
+
+  <!-- Footer Elements -->
+  <div class="container">
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
+          {%- if site.github_username -%}
+			<a href="https://github.com/{{site.github_username}}">
+				<i class="fab fa-github p-1" style="font-size:48px"></i>
+			</a>
+			{%- endif -%}
+			{%- if site.linkedin_username -%}
+				<a href="https://linkedin.com/in/{{site.linkedin_username}}">
+					<i class="fab fa-linkedin p-1" style="font-size:48px"></i>
+				</a>
+			{%- endif -%}
+			{%- if site.email -%}
+				<a href="mailto:{{site.email}}">
+					<i class="fas fa-paper-plane p-1" style="font-size:48px"></i>
+				</a>
+			{%- endif -%}
+			<p class="text-center p-3"> © <a href="/">{{ site.user.name }}</a>, 2019</p>
+        </div>
+      </div>
     </div>
+  </div>
+
 </footer>
