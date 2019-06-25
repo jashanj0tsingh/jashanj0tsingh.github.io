@@ -2,16 +2,25 @@
 
 <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #1B2021;">
   <a class="navbar-brand" href="/">Home</a>
-  <!-- <div class="collapse navbar-collapse" id="navbar_top"> -->
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartop">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbartop">
     <ul class="navbar-nav mr-auto">
       {% for registered_page in site.page_names %}
         {% if registered_page == page.title  %}
           {% if registered_page != "home"  %}
-            <a class="nav-link active" href="/{{ registered_page }}"><span class="text-capitalize">{{ registered_page }}</span></a>
+            <li class="nav-item">
+              <a class="nav-link active" href="/{{ registered_page }}"><span class="text-capitalize">{{ registered_page }}</span></a>
+            </li>
           {% endif %}
           {% else %}
           {% if registered_page != "home"  %}
-            <a class="nav-link active" href="/{{ registered_page }}"><span class="text-capitalize">{{ registered_page }}</span></a>
+            <li class="nav-item">
+              <a class="nav-link active" href="/{{ registered_page }}"><span class="text-capitalize">{{ registered_page }}</span></a>
+            </li>
           {% endif %}
         {% endif %}
       {% endfor %}
