@@ -12,13 +12,13 @@
       {% for registered_page in site.page_names %}
         {% if registered_page == page.title  %}
           {% if registered_page != "home"  %}
-            <li class="nav-item">
+            <li class="nav-item py-3">
               <a class="nav-link active" href="/{{ registered_page }}"><span class="text-capitalize">{{ registered_page }}</span></a>
             </li>
           {% endif %}
           {% else %}
           {% if registered_page != "home"  %}
-            <li class="nav-item">
+            <li class="nav-item py-3">
               <a class="nav-link active" href="/{{ registered_page }}"><span class="text-capitalize">{{ registered_page }}</span></a>
             </li>
           {% endif %}
@@ -26,7 +26,7 @@
       {% endfor %}
     </ul>
     <ul class="navbar-nav ml-auto nav-flex-icons">
-      <li class="nav-item avatar">
+      <li class="nav-item avatar py-3">
         <a class="nav-link p-0" href="https://linkedin.com/in/{{site.linkedin_username}}">
           <img src="../assets/linkedindp.jpeg" class="rounded-circle z-depth-0"
             alt="avatar image" height="45">
