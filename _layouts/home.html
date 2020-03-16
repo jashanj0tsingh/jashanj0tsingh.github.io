@@ -1,10 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>{% include header.html %}</head>
-   <body class="text-center" bgcolor="#1b2021">
+   <body>
       <div>
-         {{content}}
-         {% include footer.html %}
+         {% include nav.html %}
       </div>
+      {% include clock.html %}
+      {% include footer.html %}
    </body>
 </html>

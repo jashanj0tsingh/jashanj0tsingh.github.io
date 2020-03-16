@@ -1,7 +1,8 @@
 title: Jashanjot Singh
 email: encs.jashanjotsingh@gmail.com
 description: |
-  Jashanjot Singh, Concordia University
+  Jashanjot Singh, Master of Computer Science
+  Concordia University
   Montreal, QC, Canada
 baseurl: "" 
 url: "jashanj0tsingh.github.io" 
@@ -11,7 +12,7 @@ linkedin_username: jashanj0tsingh
 
 # Build settings
 markdown: kramdown
-# theme: 
+# theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -24,9 +25,9 @@ user:
 
 # pages
 page_names:
-  - home
-  - about
-  - publications
+  # - home
+  # - about
+  # - publications
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
