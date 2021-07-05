@@ -1,1 +1,0 @@
-# jashanjotsingh.com
