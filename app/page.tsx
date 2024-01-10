@@ -11,7 +11,7 @@ import { SiReactivex } from "react-icons/si";
 
 export default function Home() {
   const now = new Date();
-  const style = { color: "#2196F3", fontSize: "1em" };
+  const style = { color: "#2196F3", fontSize: "1em", paddingRight: "0.5em" };
 
   return (
     <main className="container">
@@ -23,7 +23,8 @@ export default function Home() {
             <div className="window-control maximize"></div>
           </div>
           <span className="terminal-title">
-            <FaFolder style={style} /> &nbsp; user@localhost ~
+            <FaFolder style={style} /> localhost
+            {/* <FaFolder style={style} /> user@localhost */}
           </span>
         </div>
         <div className="terminal-body">
