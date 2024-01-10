@@ -98,10 +98,18 @@ body {
 
 .languages {
   list-style-type: "👉🏽 ";
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding-top: 10px;
 }
 
 .links {
   list-style-type: "🔗 ";
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding-top: 10px;
 }
 
 .resume-row {

@@ -51,8 +51,8 @@ export default function Home() {
                   Programming Languages <br />
                   <ul className="languages">
                     <li>Go </li>
-                    <li>JS | TS</li>
                     <li>C | C++ | C#</li>
+                    <li>JS | TS</li>
                   </ul>
                 </span>
               </li>
