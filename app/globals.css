@@ -90,10 +90,18 @@ body {
 }
 
 .resume {
-  list-style-type: "📌 ";
+  list-style-type: "⚡️ ";
   margin: 0;
   padding: 0;
   padding-left: 50px;
+}
+
+.languages {
+  list-style-type: "👉🏽 ";
+}
+
+.links {
+  list-style-type: "🔗 ";
 }
 
 .resume-row {

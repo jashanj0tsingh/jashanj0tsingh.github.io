@@ -1,7 +1,12 @@
 import { Clock } from "./heure";
+import { FaAngular } from "react-icons/fa";
+import { FaDocker } from "react-icons/fa";
 import { FaFolder } from "react-icons/fa";
+import { FaGit } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { SiReactivex } from "react-icons/si";
 // import { FaGolang } from "react-icons/fa6";
 
 export default function Home() {
@@ -39,47 +44,75 @@ export default function Home() {
           <div className="row">
             <ul className="resume">
               <li className="resume-row">
-                <span>Full Stack Developer @ CAE | Montréal, QC</span>
+                <span>Full Stack Developer @ CAE</span>
               </li>
               <li className="resume-row">
                 <span>
-                  Programming Languages <br /> &nbsp;⎿ Go | C# | TypeScript |
-                  JavaScript | C++
-                </span>
-              </li>
-              <li className="resume-row">
-                <span>
-                  Frameworks, Libraries <br /> &nbsp;⎿ Angular | React | RxJS
-                </span>
-              </li>
-              <li className="resume-row">
-                <span>
-                  Tools, Technologies <br /> &nbsp;⎿ Git | Docker
+                  Programming Languages <br />
+                  <ul className="languages">
+                    <li>Go </li>
+                    <li>JS | TS</li>
+                    <li>C | C++ | C#</li>
+                  </ul>
                 </span>
               </li>
               <li className="resume-row">
                 <span>
-                  Socials <br /> &nbsp;⎿&nbsp;
-                  <a
-                    href="https://www.linkedin.com/in/jashanj0tsingh/"
-                    className="socials"
-                  >
-                    LinkedIn
-                  </a>
-                  &nbsp;
-                  <FaLinkedin />
+                  Frameworks, Libraries <br />
+                  <ul className="languages">
+                    <li>
+                      Angular <FaAngular />
+                    </li>
+                    <li>
+                      React <FaReact />
+                    </li>
+                    <li>
+                      RxJS <SiReactivex />
+                    </li>
+                  </ul>
                 </span>
-                &nbsp;|&nbsp;
+              </li>
+              <li className="resume-row">
                 <span>
-                  <a
-                    href="https://www.github.com/jashanj0tsingh/"
-                    className="socials"
-                  >
-                    GitHub
-                  </a>
-                  &nbsp;
-                  <FaGithub />
+                  Tools, Technologies <br />
+                  <ul className="languages">
+                    <li>
+                      Git <FaGit />
+                    </li>
+                    <li>
+                      Docker <FaDocker />
+                    </li>
+                  </ul>
                 </span>
+              </li>
+              <li className="resume-row">
+                Socials <br />
+                <ul className="links">
+                  <li>
+                    <span>
+                      <a
+                        href="https://www.linkedin.com/in/jashanj0tsingh/"
+                        className="socials"
+                      >
+                        LinkedIn
+                      </a>
+                      &nbsp;
+                      <FaLinkedin />
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a
+                        href="https://www.github.com/jashanj0tsingh/"
+                        className="socials"
+                      >
+                        GitHub
+                      </a>
+                      &nbsp;
+                      <FaGithub />
+                    </span>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
