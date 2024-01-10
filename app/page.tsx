@@ -1,5 +1,6 @@
 import { Clock } from "./heure";
 import { FaAngular } from "react-icons/fa";
+// import { FaRegCopyright } from "react-icons/fa6";
 import { FaDocker } from "react-icons/fa";
 import { FaFolder } from "react-icons/fa";
 import { FaGit } from "react-icons/fa";
@@ -7,7 +8,6 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { SiReactivex } from "react-icons/si";
-// import { FaGolang } from "react-icons/fa6";
 
 export default function Home() {
   const now = new Date();
@@ -116,6 +116,11 @@ export default function Home() {
               </li>
             </ul>
           </div>
+          {/* <div className="row">
+            <span className="tilde">~</span>
+            <span className="cmd"> ./copyright.sh</span> <br />
+            <FaRegCopyright /> Jashanjot Singh, 2024
+          </div> */}
           &nbsp;
           <div className="cursor"></div>
         </div>
