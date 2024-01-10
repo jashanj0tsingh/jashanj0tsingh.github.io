@@ -43,18 +43,23 @@ export default function Home() {
               </li>
               <li className="resume-row">
                 <span>
-                  Programming Languages |=&gt; Go | C# | TypeScript | JavaScript
-                  | C++
+                  Programming Languages <br /> &nbsp;⎿ Go | C# | TypeScript |
+                  JavaScript | C++
                 </span>
               </li>
               <li className="resume-row">
-                <span>Frameworks, Libraries |=&gt; Angular | React | RxJS</span>
-              </li>
-              <li className="resume-row">
-                <span>Tools, Technologies &nbsp; |=&gt; Git | Docker</span>
+                <span>
+                  Frameworks, Libraries <br /> &nbsp;⎿ Angular | React | RxJS
+                </span>
               </li>
               <li className="resume-row">
                 <span>
+                  Tools, Technologies <br /> &nbsp;⎿ Git | Docker
+                </span>
+              </li>
+              <li className="resume-row">
+                <span>
+                  Socials <br /> &nbsp;⎿&nbsp;
                   <a
                     href="https://www.linkedin.com/in/jashanj0tsingh/"
                     className="socials"
@@ -64,7 +69,7 @@ export default function Home() {
                   &nbsp;
                   <FaLinkedin />
                 </span>
-                &emsp;
+                &nbsp;|&nbsp;
                 <span>
                   <a
                     href="https://www.github.com/jashanj0tsingh/"
