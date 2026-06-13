@@ -65,8 +65,36 @@ body {
   flex-grow: 1;
   padding: 20px;
   color: #ccc5b9;
-  overflow: hidden;
+  overflow-y: auto;
   position: relative;
+  scrollbar-color: #2bc016 #1b2021;
+  scrollbar-width: thin;
+}
+
+.terminal-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.terminal-body::-webkit-scrollbar-track {
+  background: #1b2021;
+}
+
+.terminal-body::-webkit-scrollbar-thumb {
+  background-color: #2bc016;
+  border-radius: 3px;
+}
+
+.terminal-body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.07) 2px,
+      rgba(0, 0, 0, 0.07) 4px);
+  pointer-events: none;
+  z-index: 10;
 }
 
 .terminal-body>.row {
@@ -75,14 +103,26 @@ body {
 
 .cmd {
   color: #2bc016;
+  text-shadow: 0 0 8px rgba(43, 192, 22, 0.7);
+}
+
+.boot-sequence {
+  color: #666;
+  font-size: 0.88em;
+  margin-bottom: 6px;
+}
+
+.boot-ok {
+  color: #2bc016;
+  text-shadow: 0 0 6px rgba(43, 192, 22, 0.5);
 }
 
 .cursor {
-  position: absolute;
   width: 8px;
   height: 16px;
   background-color: #00ff00;
   animation: blink 1s infinite;
+  flex-shrink: 0;
 }
 
 .resume {
