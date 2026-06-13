@@ -3,9 +3,10 @@
 import { useEffect, useState } from "react";
 
 const Clock = () => {
-  const [dateTime, setDateTime] = useState(new Date());
+  const [dateTime, setDateTime] = useState<Date | null>(null);
 
   useEffect(() => {
+    setDateTime(new Date());
     const interval = setInterval(() => setDateTime(new Date()), 1000);
 
     return () => {
@@ -13,7 +14,7 @@ const Clock = () => {
     };
   }, []);
 
-  return <div>{dateTime.toLocaleString("en-US")}</div>;
+  return <div>{dateTime ? dateTime.toLocaleString("en-US") : null}</div>;
 };
 
 export default Clock;
