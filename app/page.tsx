@@ -1,16 +1,16 @@
-import { Clock } from "./heure";
-import { FaAngular } from "react-icons/fa";
-// import { FaRegCopyright } from "react-icons/fa6";
-import { FaDocker } from "react-icons/fa";
-import { FaFolder } from "react-icons/fa";
-import { FaGit } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
+import {
+  FaAngular,
+  FaDocker,
+  FaFolder,
+  FaGit,
+  FaGithub,
+  FaLinkedin,
+  FaReact,
+} from "react-icons/fa";
 import { SiReactivex } from "react-icons/si";
+import Clock from "./heure";
 
 export default function Home() {
-  const now = new Date();
   const style = { color: "#2196F3", fontSize: "1em", paddingRight: "0.5em" };
 
   return (
@@ -31,7 +31,7 @@ export default function Home() {
           <div className="row">
             <span className="tilde">~</span>
             <span className="cmd"> date</span>
-            <Clock time={now.toLocaleString("en-US")} />
+            <Clock />
           </div>
           <div className="row">
             <span className="tilde">~</span>
@@ -117,11 +117,6 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          {/* <div className="row">
-            <span className="tilde">~</span>
-            <span className="cmd"> ./copyright.sh</span> <br />
-            <FaRegCopyright /> Jashanjot Singh, 2024
-          </div> */}
           &nbsp;
           <div className="cursor"></div>
         </div>

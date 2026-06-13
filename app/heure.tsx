@@ -2,12 +2,8 @@
 
 import { useEffect, useState } from "react";
 
-type DigitalClock = {
-  time: string;
-};
-
-export const Clock = ({ time: initial }: DigitalClock) => {
-  const [dateTime, setDateTime] = useState(new Date(initial));
+const Clock = () => {
+  const [dateTime, setDateTime] = useState(new Date());
 
   useEffect(() => {
     const interval = setInterval(() => setDateTime(new Date()), 1000);
@@ -19,3 +15,5 @@ export const Clock = ({ time: initial }: DigitalClock) => {
 
   return <div>{dateTime.toLocaleString("en-US")}</div>;
 };
+
+export default Clock;
