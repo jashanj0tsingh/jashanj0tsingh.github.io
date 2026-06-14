@@ -157,6 +157,33 @@ body {
   color: #ccc5b9;
 }
 
+.voyager-art {
+  color: #2bc016;
+  text-shadow: 0 0 8px rgba(43, 192, 22, 0.6);
+  font-size: 0.8em;
+  line-height: 1.4;
+  margin: 8px 0;
+  animation: fade-hold 2.8s ease forwards;
+}
+
+@keyframes fade-hold {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 @keyframes blink {
   50% {
     opacity: 0;

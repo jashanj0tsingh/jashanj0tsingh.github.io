@@ -11,14 +11,14 @@ import {
 } from "react-icons/fa";
 import { SiReactivex } from "react-icons/si";
 import Clock from "./heure";
+import { VOYAGER_ASCII } from "./voyager";
 
 const BOOT_SEQUENCE = [
   "BIOS v2.26.1",
+  "------------",
   "Checking memory... 8192MB OK",
   "Loading kernel modules... OK",
-  "Starting network services... OK",
   "Mounting filesystems... OK",
-  "jashanjotsingh@localhost:~$",
 ];
 
 function Typewriter({
@@ -53,6 +53,7 @@ function Typewriter({
 
 type Phase =
   | "boot"
+  | "boot-art"
   | "typing-date"
   | "typing-whoami"
   | "typing-resume"
@@ -73,7 +74,7 @@ export function TerminalBody() {
         setBootLines((p) => [...p, line]);
         setTimeout(tick, 300);
       } else {
-        setTimeout(() => setPhase("typing-date"), 600);
+        setTimeout(() => setPhase("boot-art"), 400);
       }
     };
     setTimeout(tick, 400);
@@ -82,7 +83,7 @@ export function TerminalBody() {
     };
   }, []);
 
-  const showDate = phase !== "boot";
+  const showDate = phase !== "boot" && phase !== "boot-art";
   const showWhoami = ["typing-whoami", "typing-resume", "done"].includes(phase);
   const showResume = ["typing-resume", "done"].includes(phase);
   const showResumeContent = phase === "done";
@@ -90,7 +91,7 @@ export function TerminalBody() {
 
   return (
     <>
-      {phase === "boot" && bootLines.length > 0 && (
+      {(phase === "boot" || phase === "boot-art") && bootLines.length > 0 && (
         <div className="row boot-sequence">
           {bootLines.map((line, idx) => (
             <div
@@ -101,6 +102,18 @@ export function TerminalBody() {
             </div>
           ))}
         </div>
+      )}
+
+      {phase === "boot-art" && (
+        <pre
+          className="voyager-art"
+          onAnimationEnd={(e) => {
+            if (e.target === e.currentTarget)
+              setTimeout(() => setPhase("typing-date"), 400);
+          }}
+        >
+          {VOYAGER_ASCII}
+        </pre>
       )}
 
       {showDate && (
