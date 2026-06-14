@@ -1,0 +1,27 @@
+{
+  "title": "Software Engineer @ Haivision Inc.",
+  "sections": [
+    {
+      "label": "Programming Languages",
+      "items": ["Go", "C | C++ | C#", "JS | TS"]
+    },
+    {
+      "label": "Frameworks, Libraries",
+      "items": ["Angular", "React", "Cypress", "NextJS"]
+    },
+    {
+      "label": "Tools, Technologies",
+      "items": ["Git", "Docker", "OpenShift"]
+    }
+  ],
+  "socials": [
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/jashanj0tsingh/"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://www.github.com/jashanj0tsingh/"
+    }
+  ]
+}

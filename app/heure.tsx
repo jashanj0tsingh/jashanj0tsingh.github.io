@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const Clock = () => {
+export const Clock = () => {
   const [dateTime, setDateTime] = useState<Date | null>(null);
 
   useEffect(() => {
@@ -16,5 +16,3 @@ const Clock = () => {
 
   return <div>{dateTime ? dateTime.toLocaleString("en-US") : null}</div>;
 };
-
-export default Clock;

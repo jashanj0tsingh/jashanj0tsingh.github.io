@@ -1,17 +1,10 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import {
-  FaAngular,
-  FaDocker,
-  FaGit,
-  FaGithub,
-  FaLinkedin,
-  FaReact,
-} from "react-icons/fa";
-import { SiReactivex } from "react-icons/si";
-import Clock from "./heure";
+import { Clock } from "./heure";
+import { ICON_MAP } from "./icon-map";
 import { VOYAGER_ASCII } from "./voyager";
+import resume from "./resume.json";
 
 const BOOT_SEQUENCE = [
   "BIOS v2.26.1",
@@ -175,74 +168,36 @@ export function TerminalBody() {
         <div className="row">
           <ul className="resume">
             <li className="resume-row">
-              <span>Full Stack Developer @ CAE</span>
+              <span>{resume.title}</span>
             </li>
-            <li className="resume-row">
-              <span>
-                Programming Languages <br />
-                <ul className="languages">
-                  <li>Go</li>
-                  <li>C | C++ | C#</li>
-                  <li>JS | TS</li>
-                </ul>
-              </span>
-            </li>
-            <li className="resume-row">
-              <span>
-                Frameworks, Libraries <br />
-                <ul className="languages">
-                  <li>
-                    Angular <FaAngular />
-                  </li>
-                  <li>
-                    React <FaReact />
-                  </li>
-                  <li>
-                    RxJS <SiReactivex />
-                  </li>
-                </ul>
-              </span>
-            </li>
-            <li className="resume-row">
-              <span>
-                Tools, Technologies <br />
-                <ul className="languages">
-                  <li>
-                    Git <FaGit />
-                  </li>
-                  <li>
-                    Docker <FaDocker />
-                  </li>
-                </ul>
-              </span>
-            </li>
+            {resume.sections.map((section) => (
+              <li key={section.label} className="resume-row">
+                <span>
+                  {section.label} <br />
+                  <ul className="languages">
+                    {section.items.map((item) => (
+                      <li key={item}>
+                        {item} {ICON_MAP[item] ?? null}
+                      </li>
+                    ))}
+                  </ul>
+                </span>
+              </li>
+            ))}
             <li className="resume-row">
               Socials <br />
               <ul className="links">
-                <li>
-                  <span>
-                    <a
-                      href="https://www.linkedin.com/in/jashanj0tsingh/"
-                      className="socials"
-                    >
-                      LinkedIn
-                    </a>
-                    &nbsp;
-                    <FaLinkedin />
-                  </span>
-                </li>
-                <li>
-                  <span>
-                    <a
-                      href="https://www.github.com/jashanj0tsingh/"
-                      className="socials"
-                    >
-                      GitHub
-                    </a>
-                    &nbsp;
-                    <FaGithub />
-                  </span>
-                </li>
+                {resume.socials.map((social) => (
+                  <li key={social.label}>
+                    <span>
+                      <a href={social.url} className="socials">
+                        {social.label}
+                      </a>
+                      &nbsp;
+                      {ICON_MAP[social.label] ?? null}
+                    </span>
+                  </li>
+                ))}
               </ul>
             </li>
           </ul>
